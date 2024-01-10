@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label,
+  input[type="submit"],
+  select {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  input[type="checkbox"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 600px) {
+    .container {
+      max-width: 90%;
+    }
+  }

@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form id="myForm" onsubmit="validateForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+      <small> Please enter a 10-digit phone number</small>
+      <br>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <br>
+      <label for="religion">Religion:</label>
+      <!-- Checkbox options for religion -->
+      <input type="checkbox" id="christian" name="religion" value="Christian">
+      <label for="christian">Christian</label>
+      <input type="checkbox" id="islam" name="religion" value="Islam">
+      <label for="islam">Islam</label>
+      <input type="checkbox" id="hinduism" name="religion" value="Hinduism">
+      <label for="hinduism">Hinduism</label>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
